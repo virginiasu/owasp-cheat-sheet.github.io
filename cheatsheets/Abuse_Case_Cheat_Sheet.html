@@ -113,7 +113,131 @@
   <main>
     <section class="cheat-sheet">
       <h1>Abuse Case</h1>
-      <iframe src="https://cheatsheetseries.owasp.org/cheatsheets/Abuse_Case_Cheat_Sheet.html" style="width:100%;height:80vh;border:none;background:#fff;"></iframe>
+      <!-- Begin: Abuse Case Cheat Sheet Content -->
+      <h2>Introduction</h2>
+      <p>Often when the security level of an application is mentioned in requirements, the following <em>expressions</em> are met:</p>
+      <ul>
+        <li>The application must be secure.</li>
+        <li>The application must defend against all attacks targeting this category of application.</li>
+        <li>The application must defend against attacks from the OWASP TOP 10</li>
+        <li>...</li>
+      </ul>
+      <p>These security requirements are too generic, and thus useless for a development team...</p>
+      <p>In order to build a secure application, from a pragmatic point of view, it is important to identify the attacks which the application must defend against, according to its business and technical context. Abuse cases are a frequently recommended <em>threat modeling</em> tool, and reviewing the threat modeling cheat sheet may be helpful.</p>
+      <h3>Objective</h3>
+      <p>The objective of this cheat sheet is to provide an explanation of what an <strong>Abuse Case</strong> is, how abuse cases can be important when considering the security of an application, and finally to provide a proposal for a pragmatic approach to building a list of abuse cases and tracking them for every feature planned for implementation as part of an application. The cheat sheet may be used for this purpose regardless of the project methodology used (waterfall or agile).</p>
+      <blockquote><p>The main objective is to provide a pragmatic approach in order to allow a company or a project team to start building and handling the list of abuse cases and then customize the elements proposed to its context/culture in order to, finally, build its own method. This cheat sheet can be seen as a getting-started tutorial.</p></blockquote>
+      <h3>Context &amp; approach</h3>
+      <h4>Why clearly identify the attacks</h4>
+      <p>Clearly identifying the attacks against which the application must defend is essential in order to enable the following steps in a project or sprint:</p>
+      <ul>
+        <li>Evaluate the business risk for each of the identified attacks in order to perform a selection according to the business risk and the project/sprint budget.</li>
+        <li>Derive security requirements and add them into the project specification or sprint's user stories and acceptance criteria.</li>
+        <li>Estimate the overhead of provision in the initial project/sprint charge that will be necessary to implement the countermeasures.</li>
+        <li>About countermeasures: Allow the project team to define them, and to determine in which location (network, infrastructure, code...) they should be located.</li>
+      </ul>
+      <h4>Notion of Abuse Cases</h4>
+      <p>You can think of <strong>Abuse cases</strong> in two ways. The first is to discover attacks (answer the question "what can go wrong"), and the second is to help record those attacks (informally, this includes threats, issues, risks) in a form that may be less intimidating to developers.</p>
+      <p>An <strong>Abuse Case</strong> can be defined as:</p>
+      <blockquote><p>A way to use a feature that was not expected by the implementer, allowing an attacker to influence the feature or outcome of use of the feature based on the attacker action (or input).</p></blockquote>
+      <p>Synopsis defines an <strong>Abuse Case</strong> like this:</p>
+      <blockquote><p>Misuse and abuse cases describe how users misuse or exploit the weaknesses of controls in software features to attack an application. This can lead to tangible business impact when a direct attack against business functionalities, which may bring in revenue or provide positive user experience, are attacked. Abuse cases can also be an effective way to drive security requirements that lead to proper protection of these critical business use cases.</p></blockquote>
+      <h4>How to define the list of Abuse Cases</h4>
+      <p>There are many different ways to define the list of abuse cases for a feature (that can be mapped to a user story in agile projects). Threat Modeling is a set of techniques for anticipating what can go wrong, and ensuring we do something about each identified possible scenario. Taking each item on the list of "what are we going to do about it" and writing an abuse case may help your engineering teams process the output.</p>
+      
+      <h4>Practical Approach to Creating Abuse Cases</h4>
+      <p>Here's a step-by-step approach to creating and managing abuse cases:</p>
+      <ol>
+        <li><strong>Identify Features:</strong> List all features and functionality in your application that could be potential targets for abuse.</li>
+        <li><strong>Brainstorm Attack Scenarios:</strong> For each feature, consider:
+          <ul>
+            <li>How could an attacker misuse this feature?</li>
+            <li>What unintended consequences could occur?</li>
+            <li>What business logic could be bypassed?</li>
+            <li>What data could be exposed or manipulated?</li>
+          </ul>
+        </li>
+        <li><strong>Document Abuse Cases:</strong> For each identified scenario, create a structured abuse case that includes:
+          <ul>
+            <li>Title/ID: Unique identifier for the abuse case</li>
+            <li>Description: Clear explanation of the potential abuse</li>
+            <li>Impact: Business and technical impact if exploited</li>
+            <li>Risk Level: High/Medium/Low based on impact and likelihood</li>
+            <li>Mitigation: Required controls or countermeasures</li>
+          </ul>
+        </li>
+      </ol>
+
+      <h4>Example Abuse Cases</h4>
+      <div class="example-box">
+        <h5>Example 1: User Registration</h5>
+        <p><strong>Feature:</strong> User registration with email verification</p>
+        <p><strong>Abuse Case:</strong> Account Enumeration</p>
+        <ul>
+          <li><strong>Scenario:</strong> Attacker attempts to register with known email addresses to determine which ones are already registered</li>
+          <li><strong>Impact:</strong> Privacy violation, potential for targeted attacks</li>
+          <li><strong>Mitigation:</strong> Use consistent response times and messages for both existing and non-existing accounts</li>
+        </ul>
+      </div>
+
+      <div class="example-box">
+        <h5>Example 2: Password Reset</h5>
+        <p><strong>Feature:</strong> Password reset functionality</p>
+        <p><strong>Abuse Case:</strong> Token Reuse</p>
+        <ul>
+          <li><strong>Scenario:</strong> Attacker captures a password reset token and attempts to reuse it after it's been used</li>
+          <li><strong>Impact:</strong> Account takeover</li>
+          <li><strong>Mitigation:</strong> Implement one-time use tokens with short expiration times</li>
+        </ul>
+      </div>
+
+      <h4>Integration with Development Lifecycle</h4>
+      <p>To effectively implement abuse cases in your development process:</p>
+      <ul>
+        <li><strong>Requirements Phase:</strong> Include abuse cases in feature specifications</li>
+        <li><strong>Design Phase:</strong> Review abuse cases during architecture and design reviews</li>
+        <li><strong>Implementation Phase:</strong> Use abuse cases to guide security testing</li>
+        <li><strong>Testing Phase:</strong> Create test cases based on abuse cases</li>
+        <li><strong>Maintenance Phase:</strong> Regularly review and update abuse cases as new threats emerge</li>
+      </ul>
+
+      <h4>Best Practices</h4>
+      <ul>
+        <li>Keep abuse cases simple and focused on specific scenarios</li>
+        <li>Use clear, non-technical language when possible</li>
+        <li>Regularly review and update abuse cases</li>
+        <li>Include both technical and business impact in assessments</li>
+        <li>Link abuse cases to specific security requirements</li>
+        <li>Maintain a centralized repository of abuse cases</li>
+        <li>Involve all stakeholders in abuse case creation and review</li>
+      </ul>
+
+      <h4>Common Pitfalls to Avoid</h4>
+      <ul>
+        <li>Creating too many or too vague abuse cases</li>
+        <li>Focusing only on technical vulnerabilities</li>
+        <li>Neglecting business logic abuse scenarios</li>
+        <li>Not updating abuse cases as the application evolves</li>
+        <li>Failing to prioritize abuse cases based on risk</li>
+        <li>Not involving all relevant stakeholders</li>
+      </ul>
+
+      <h4>Tools and Resources</h4>
+      <ul>
+        <li>OWASP Threat Modeling Cheat Sheet</li>
+        <li>OWASP Top 10 for reference on common vulnerabilities</li>
+        <li>STRIDE methodology for threat modeling</li>
+        <li>Attack trees for visualizing attack scenarios</li>
+        <li>Security requirement templates</li>
+      </ul>
+
+      <h4>Conclusion</h4>
+      <p>Abuse cases are a powerful tool for identifying and mitigating security risks in your application. By systematically identifying potential abuse scenarios and implementing appropriate controls, you can significantly improve your application's security posture. Remember that abuse cases should be living documents that evolve with your application and the threat landscape.</p>
+
+      <div class="note-box">
+        <p><strong>Note:</strong> This cheat sheet provides a starting point for implementing abuse cases in your development process. Customize the approach based on your organization's needs, risk tolerance, and development methodology.</p>
+      </div>
+      <!-- End: Abuse Case Cheat Sheet Content -->
     </section>
   </main>
   <script src="../script.js"></script>

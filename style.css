@@ -213,4 +213,52 @@ main {
     max-width: 98vw;
     max-height: 180px;
   }
+}
+
+/* Abuse Case Cheat Sheet specific styles */
+.example-box {
+    background-color: #f8f9fa;
+    border-left: 4px solid #007bff;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+}
+
+.example-box h5 {
+    color: #0056b3;
+    margin-top: 0;
+}
+
+.note-box {
+    background-color: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+}
+
+.note-box p {
+    margin: 0;
+}
+
+/* Ensure proper spacing in lists */
+.cheat-sheet ul, .cheat-sheet ol {
+    margin-bottom: 1rem;
+}
+
+.cheat-sheet li {
+    margin-bottom: 0.5rem;
+}
+
+/* Style blockquotes */
+.cheat-sheet blockquote {
+    background-color: #f8f9fa;
+    border-left: 4px solid #6c757d;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+}
+
+.cheat-sheet blockquote p {
+    margin: 0;
 } 
