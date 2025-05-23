@@ -26,7 +26,7 @@ main, .sidebar, .cheat-sheet, .home-center {
   width: 260px;
   background: #2254A4; /* OWASP blue */
   color: #fff;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 0;
   box-sizing: border-box;
   min-height: 100vh;
 }
@@ -47,10 +47,12 @@ main, .sidebar, .cheat-sheet, .home-center {
   padding: 0;
 }
 .sidebar li {
-  margin-bottom: 0.7rem;
   cursor: pointer;
-  display: flex;
-  align-items: center;
+  padding: 5px;
+}
+
+.sidebar li:hover, .sidebar li.active {
+  background-color: #08388d;
 }
 .sidebar a {
   color: #fff;
@@ -58,10 +60,7 @@ main, .sidebar, .cheat-sheet, .home-center {
   font-weight: 500;
   transition: color 0.2s;
 }
-.sidebar a:hover {
-  color: #ffe066;
-  text-decoration: underline;
-}
+
 .badge {
   display: inline-block;
   padding: 0.2em 0.6em;
