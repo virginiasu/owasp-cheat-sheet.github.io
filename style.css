@@ -102,7 +102,6 @@ main {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(34,84,164,0.07);
   padding: 2rem;
-  max-width: 700px;
   margin: auto;
 }
 .cheat-sheet h1 {
@@ -169,6 +168,13 @@ main {
   color: #2254A4;
   text-decoration: underline;
   font-weight: 500;
+}
+.home-bar {
+  background: #3d4551;
+  color: #fff;
+  padding: 1rem 2rem;
+  margin: 1rem -2rem;
+  font-size: 1.2rem;
 }
 @media (max-width: 600px) {
   .home-center {
