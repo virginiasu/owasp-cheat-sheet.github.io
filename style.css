@@ -45,13 +45,14 @@ main, .sidebar, .cheat-sheet, .home-center {
 .sidebar ul {
   list-style: none;
   padding: 0;
+  margin-bottom: 1px;
 }
 .sidebar li {
   cursor: pointer;
-  padding: 5px;
+  padding: 5px 10px;
 }
 
-.sidebar li:hover, .sidebar li.active {
+.sidebar li.active {
   background-color: #08388d;
 }
 .sidebar a {
@@ -59,6 +60,12 @@ main, .sidebar, .cheat-sheet, .home-center {
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s;
+  display: inline-block;
+  width: 100%;
+}
+
+.sidebar a:hover, .sidebar li.active a {
+  color: #ffe066;
 }
 
 .badge {
