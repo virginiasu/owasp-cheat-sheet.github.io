@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OWASP Cheat Sheet Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="sidebar">
+    <h2>Cheat Sheets</h2>
+    <input type="text" placeholder="Search..." id="searchBox">
+    <ul id="cheatSheetList">
+      <li><a href="cheatsheets/AJAX_Security_Cheat_Sheet.html">AJAX Security</a></li>
+      <li><a href="cheatsheets/Abuse_Case_Cheat_Sheet.html" target="_blank">Abuse Case</a></li>
+      <li><a href="cheatsheets/Access_Control_Cheat_Sheet.html" target="_blank">Access Control</a></li>
+      <li><a href="cheatsheets/Attack_Surface_Analysis_Cheat_Sheet.html" target="_blank">Attack Surface Analysis</a></li>
+      <li><a href="cheatsheets/Authentication_Cheat_Sheet.html" target="_blank">Authentication</a></li>
+      <li><a href="cheatsheets/Authorization_Cheat_Sheet.html" target="_blank">Authorization</a></li>
+      <li><a href="cheatsheets/Authorization_Testing_Automation_Cheat_Sheet.html" target="_blank">Authorization Testing Automation</a></li>
+      <li><a href="cheatsheets/Automotive_Security_Cheat_Sheet.html" target="_blank">Automotive Security</a></li>
+      <li><a href="cheatsheets/Bean_Validation_Cheat_Sheet.html" target="_blank">Bean Validation</a></li>
+      <li><a href="cheatsheets/Browser_Extension_Vulnerabilities_Cheat_Sheet.html" target="_blank">Browser Extension Vulnerabilities</a></li>
+      <li><a href="cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html" target="_blank">C-Based Toolchain Hardening</a></li>
+      <li><a href="cheatsheets/CI_CD_Security_Cheat_Sheet.html" target="_blank">CI CD Security</a></li>
+      <li><a href="cheatsheets/Choosing_and_Using_Security_Questions_Cheat_Sheet.html" target="_blank">Choosing and Using Security Questions</a></li>
+      <li><a href="cheatsheets/Clickjacking_Defense_Cheat_Sheet.html" target="_blank">Clickjacking Defense</a></li>
+      <li><a href="cheatsheets/Content_Security_Policy_Cheat_Sheet.html" target="_blank">Content Security Policy</a></li>
+      <li><a href="cheatsheets/Cookie_Theft_Mitigation_Cheat_Sheet.html" target="_blank">Cookie Theft Mitigation</a></li>
+      <li><a href="cheatsheets/Credential_Stuffing_Prevention_Cheat_Sheet.html" target="_blank">Credential Stuffing Prevention</a></li>
+      <li><a href="cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html" target="_blank">Cross-Site Request Forgery Prevention</a></li>
+      <li><a href="cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html" target="_blank">Cross Site Scripting Prevention</a></li>
+      <li><a href="cheatsheets/Cryptographic_Storage_Cheat_Sheet.html" target="_blank">Cryptographic Storage</a></li>
+      <li><a href="cheatsheets/DOM_Clobbering_Prevention_Cheat_Sheet.html" target="_blank">DOM Clobbering Prevention</a></li>
+      <li><a href="cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html" target="_blank">DOM based XSS Prevention</a></li>
+      <li><a href="cheatsheets/Database_Security_Cheat_Sheet.html" target="_blank">Database Security</a></li>
+      <li><a href="cheatsheets/Denial_of_Service_Cheat_Sheet.html" target="_blank">Denial of Service</a></li>
+      <li><a href="cheatsheets/Deserialization_Cheat_Sheet.html" target="_blank">Deserialization</a></li>
+      <li><a href="cheatsheets/Django_REST_Framework_Cheat_Sheet.html" target="_blank">Django REST Framework</a></li>
+      <li><a href="cheatsheets/Django_Security_Cheat_Sheet.html" target="_blank">Django Security</a></li>
+      <li><a href="cheatsheets/Docker_Security_Cheat_Sheet.html" target="_blank">Docker Security</a></li>
+      <li><a href="cheatsheets/DotNet_Security_Cheat_Sheet.html" target="_blank">DotNet Security</a></li>
+      <li><a href="cheatsheets/Drone_Security_Cheat_Sheet.html" target="_blank">Drone Security</a></li>
+      <li><a href="cheatsheets/Error_Handling_Cheat_Sheet.html" target="_blank">Error Handling</a></li>
+      <li><a href="cheatsheets/File_Upload_Cheat_Sheet.html" target="_blank">File Upload</a></li>
+      <li><a href="cheatsheets/Forgot_Password_Cheat_Sheet.html" target="_blank">Forgot Password</a></li>
+      <li><a href="cheatsheets/GraphQL_Cheat_Sheet.html" target="_blank">GraphQL</a></li>
+      <li><a href="cheatsheets/HTML5_Security_Cheat_Sheet.html" target="_blank">HTML5 Security</a></li>
+      <li><a href="cheatsheets/HTTP_Headers_Cheat_Sheet.html" target="_blank">HTTP Headers</a></li>
+      <li><a href="cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html" target="_blank">HTTP Strict Transport Security</a></li>
+      <li><a href="cheatsheets/Infrastructure_as_Code_Security_Cheat_Sheet.html" target="_blank">Infrastructure as Code Security</a></li>
+      <li><a href="cheatsheets/Injection_Prevention_Cheat_Sheet.html" target="_blank">Injection Prevention</a></li>
+      <li><a href="cheatsheets/Injection_Prevention_in_Java_Cheat_Sheet.html" target="_blank">Injection Prevention in Java</a></li>
+      <li><a href="cheatsheets/Input_Validation_Cheat_Sheet.html" target="_blank">Input Validation</a></li>
+      <li><a href="cheatsheets/Insecure_Direct_Object_Reference_Prevention_Cheat_Sheet.html" target="_blank">Insecure Direct Object Reference Prevention</a></li>
+      <li><a href="cheatsheets/JAAS_Cheat_Sheet.html" target="_blank">JAAS</a></li>
+      <li><a href="cheatsheets/JSON_Web_Token_for_Java_Cheat_Sheet.html" target="_blank">JSON Web Token for Java</a></li>
+      <li><a href="cheatsheets/Java_Security_Cheat_Sheet.html" target="_blank">Java Security</a></li>
+      <li><a href="cheatsheets/Key_Management_Cheat_Sheet.html" target="_blank">Key Management</a></li>
+      <li><a href="cheatsheets/Kubernetes_Security_Cheat_Sheet.html" target="_blank">Kubernetes Security</a></li>
+      <li><a href="cheatsheets/LDAP_Injection_Prevention_Cheat_Sheet.html" target="_blank">LDAP Injection Prevention</a></li>
+      <li><a href="cheatsheets/Laravel_Cheat_Sheet.html" target="_blank">Laravel</a></li>
+      <li><a href="cheatsheets/Legacy_Application_Management_Cheat_Sheet.html" target="_blank">Legacy Application Management</a></li>
+      <li><a href="cheatsheets/Logging_Cheat_Sheet.html" target="_blank">Logging</a></li>
+      <li><a href="cheatsheets/Logging_Vocabulary_Cheat_Sheet.html" target="_blank">Logging Vocabulary</a></li>
+      <li><a href="cheatsheets/Mass_Assignment_Cheat_Sheet.html" target="_blank">Mass Assignment</a></li>
+      <li><a href="cheatsheets/Microservices_Security_Cheat_Sheet.html" target="_blank">Microservices Security</a></li>
+      <li><a href="cheatsheets/Microservices_based_Security_Arch_Doc_Cheat_Sheet.html" target="_blank">Microservices based Security Arch Doc</a></li>
+      <li><a href="cheatsheets/Mobile_Application_Security_Cheat_Sheet.html" target="_blank">Mobile Application Security</a></li>
+      <li><a href="cheatsheets/Multifactor_Authentication_Cheat_Sheet.html" target="_blank">Multifactor Authentication</a></li>
+      <li><a href="cheatsheets/NPM_Security_Cheat_Sheet.html" target="_blank">NPM Security</a></li>
+      <li><a href="cheatsheets/Network_Segmentation_Cheat_Sheet.html" target="_blank">Network Segmentation</a></li>
+      <li><a href="cheatsheets/NodeJS_Docker_Cheat_Sheet.html" target="_blank">NodeJS Docker</a></li>
+      <li><a href="cheatsheets/Nodejs_Security_Cheat_Sheet.html" target="_blank">Nodejs Security</a></li>
+      <li><a href="cheatsheets/OAuth2_Cheat_Sheet.html" target="_blank">OAuth2</a></li>
+      <li><a href="cheatsheets/OS_Command_Injection_Defense_Cheat_Sheet.html" target="_blank">OS Command Injection Defense</a></li>
+      <li><a href="cheatsheets/PHP_Configuration_Cheat_Sheet.html" target="_blank">PHP Configuration</a></li>
+      <li><a href="cheatsheets/Password_Storage_Cheat_Sheet.html" target="_blank">Password Storage</a></li>
+      <li><a href="cheatsheets/Pinning_Cheat_Sheet.html" target="_blank">Pinning</a></li>
+      <li><a href="cheatsheets/Prototype_Pollution_Prevention_Cheat_Sheet.html" target="_blank">Prototype Pollution Prevention</a></li>
+      <li><a href="cheatsheets/Query_Parameterization_Cheat_Sheet.html" target="_blank">Query Parameterization</a></li>
+      <li><a href="cheatsheets/REST_Assessment_Cheat_Sheet.html" target="_blank">REST Assessment</a></li>
+      <li><a href="cheatsheets/REST_Security_Cheat_Sheet.html" target="_blank">REST Security</a></li>
+      <li><a href="cheatsheets/Ruby_on_Rails_Cheat_Sheet.html" target="_blank">Ruby on Rails</a></li>
+      <li><a href="cheatsheets/SAML_Security_Cheat_Sheet.html" target="_blank">SAML Security</a></li>
+      <li><a href="cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html" target="_blank">SQL Injection Prevention</a></li>
+      <li><a href="cheatsheets/Secrets_Management_Cheat_Sheet.html" target="_blank">Secrets Management</a></li>
+      <li><a href="cheatsheets/Secure_Cloud_Architecture_Cheat_Sheet.html" target="_blank">Secure Cloud Architecture</a></li>
+      <li><a href="cheatsheets/Secure_Product_Design_Cheat_Sheet.html" target="_blank">Secure Product Design</a></li>
+      <li><a href="cheatsheets/Securing_Cascading_Style_Sheets_Cheat_Sheet.html" target="_blank">Securing Cascading Style Sheets</a></li>
+      <li><a href="cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html" target="_blank">Server Side Request Forgery Prevention</a></li>
+      <li><a href="cheatsheets/Session_Management_Cheat_Sheet.html" target="_blank">Session Management</a></li>
+      <li><a href="cheatsheets/Software_Supply_Chain_Security_Cheat_Sheet.html" target="_blank">Software Supply Chain Security</a></li>
+      <li><a href="cheatsheets/Symfony_Cheat_Sheet.html" target="_blank">Symfony</a></li>
+      <li><a href="cheatsheets/TLS_Cipher_String_Cheat_Sheet.html" target="_blank">TLS Cipher String</a></li>
+      <li><a href="cheatsheets/Third_Party_Javascript_Management_Cheat_Sheet.html" target="_blank">Third Party Javascript Management</a></li>
+      <li><a href="cheatsheets/Threat_Modeling_Cheat_Sheet.html" target="_blank">Threat Modeling</a></li>
+      <li><a href="cheatsheets/Transaction_Authorization_Cheat_Sheet.html" target="_blank">Transaction Authorization</a></li>
+      <li><a href="cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html" target="_blank">Transport Layer Protection</a></li>
+      <li><a href="cheatsheets/Transport_Layer_Security_Cheat_Sheet.html" target="_blank">Transport Layer Security</a></li>
+      <li><a href="cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet.html" target="_blank">Unvalidated Redirects and Forwards</a></li>
+      <li><a href="cheatsheets/User_Privacy_Protection_Cheat_Sheet.html" target="_blank">User Privacy Protection</a></li>
+      <li><a href="cheatsheets/Virtual_Patching_Cheat_Sheet.html" target="_blank">Virtual Patching</a></li>
+      <li><a href="cheatsheets/Vulnerability_Disclosure_Cheat_Sheet.html" target="_blank">Vulnerability Disclosure</a></li>
+      <li><a href="cheatsheets/Vulnerable_Dependency_Management_Cheat_Sheet.html" target="_blank">Vulnerable Dependency Management</a></li>
+      <li><a href="cheatsheets/Web_Service_Security_Cheat_Sheet.html" target="_blank">Web Service Security</a></li>
+      <li><a href="cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html" target="_blank">XML External Entity Prevention</a></li>
+      <li><a href="cheatsheets/XML_Security_Cheat_Sheet.html" target="_blank">XML Security</a></li>
+      <li><a href="cheatsheets/XSS_Filter_Evasion_Cheat_Sheet.html" target="_blank">XSS Filter Evasion</a></li>
+      <li><a href="cheatsheets/XS_Leaks_Cheat_Sheet.html" target="_blank">XS Leaks</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="cheat-sheet home-center">
+      <h1>OWASP Cheat Sheet Visualizer</h1>
+      <p>A simple, modern visualization of the OWASP Cheat Sheet Series.</p>
+      <p>The original cheat sheets are available at <a href="https://cheatsheetseries.owasp.org/" target="_blank">cheatsheetseries.owasp.org</a>.</p>
+      <div class="below-section-img-wrapper">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80" alt="Abstract technology illustration" class="below-section-img">
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html> 
