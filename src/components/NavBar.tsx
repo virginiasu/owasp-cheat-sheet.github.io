@@ -1,18 +1,14 @@
 import { Link } from 'react-router-dom';
-
-// Placeholder: Replace with dynamic import of .md files if needed
-const cheatSheetItems = [
-  { title: 'Authentication', path: '/cheatsheets/authentication' },
-  { title: 'Authorization', path: '/cheatsheets/authorization' },
-  // Add more items as needed
-];
+import './NavBar.css';
+import cheatSheetItems from './cheatSheetItems.json';
 
 const NavBar = () => (
-  <nav>
-    <ul style={{ listStyle: 'none', display: 'flex', gap: '1rem', padding: 0 }}>
+  <nav className="sidebar">
+    <h2>Cheat Sheets <a href='/' className='home-link'>Home</a></h2>
+    <ul className="nav-list">
       {cheatSheetItems.map((item) => (
         <li key={item.path}>
-          <Link to={item.path}>{item.title}</Link>
+          <Link to={item.path} className="nav-link">{item.title}</Link>
         </li>
       ))}
     </ul>

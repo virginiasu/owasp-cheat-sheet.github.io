@@ -1,12 +1,22 @@
 import './App.css'
-import Navbar from './components/Navbar'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import NavBar from './components/NavBar'
+import Home from './components/Home'
 
 function App() {
   return (
-    <>
-      <h1>OWASP Cheat Sheet Visualizer</h1>
-      <Navbar />
-    </>
+    <Router>
+      <div className="app-container">
+        <NavBar />
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/cheatsheets/authentication" element={<div>Authentication Cheat Sheet</div>} />
+            <Route path="/cheatsheets/authorization" element={<div>Authorization Cheat Sheet</div>} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
   )
 }
 

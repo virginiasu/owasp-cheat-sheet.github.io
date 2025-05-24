@@ -1,0 +1,390 @@
+[
+  {
+    "title": "Abuse Case",
+    "path": "/cheatsheets/Abuse_Case"
+  },
+  {
+    "title": "Access Control",
+    "path": "/cheatsheets/Access_Control"
+  },
+  {
+    "title": "Ajax Security",
+    "path": "/cheatsheets/AJAX_Security"
+  },
+  {
+    "title": "Attack Surface Analysis",
+    "path": "/cheatsheets/Attack_Surface_Analysis"
+  },
+  {
+    "title": "Authentication",
+    "path": "/cheatsheets/Authentication"
+  },
+  {
+    "title": "Authorization",
+    "path": "/cheatsheets/Authorization"
+  },
+  {
+    "title": "Authorization Testing Automation",
+    "path": "/cheatsheets/Authorization_Testing_Automation"
+  },
+  {
+    "title": "Automotive Security",
+    "path": "/cheatsheets/Automotive_Security.md"
+  },
+  {
+    "title": "Bean Validation",
+    "path": "/cheatsheets/Bean_Validation"
+  },
+  {
+    "title": "Browser Extension Vulnerabilities",
+    "path": "/cheatsheets/Browser_Extension_Vulnerabilities"
+  },
+  {
+    "title": "C-based Toolchain Hardening",
+    "path": "/cheatsheets/C-Based_Toolchain_Hardening"
+  },
+  {
+    "title": "Choosing And Using Security Questions",
+    "path": "/cheatsheets/Choosing_and_Using_Security_Questions"
+  },
+  {
+    "title": "Ci Cd Security",
+    "path": "/cheatsheets/CI_CD_Security"
+  },
+  {
+    "title": "Clickjacking Defense",
+    "path": "/cheatsheets/Clickjacking_Defense"
+  },
+  {
+    "title": "Content Security Policy",
+    "path": "/cheatsheets/Content_Security_Policy"
+  },
+  {
+    "title": "Cookie Theft Mitigation",
+    "path": "/cheatsheets/Cookie_Theft_Mitigation"
+  },
+  {
+    "title": "Credential Stuffing Prevention",
+    "path": "/cheatsheets/Credential_Stuffing_Prevention"
+  },
+  {
+    "title": "Cross Site Scripting Prevention",
+    "path": "/cheatsheets/Cross_Site_Scripting_Prevention"
+  },
+  {
+    "title": "Cross-site Request Forgery Prevention",
+    "path": "/cheatsheets/Cross-Site_Request_Forgery_Prevention"
+  },
+  {
+    "title": "Cryptographic Storage",
+    "path": "/cheatsheets/Cryptographic_Storage"
+  },
+  {
+    "title": "Database Security",
+    "path": "/cheatsheets/Database_Security"
+  },
+  {
+    "title": "Denial Of Service",
+    "path": "/cheatsheets/Denial_of_Service"
+  },
+  {
+    "title": "Deserialization",
+    "path": "/cheatsheets/Deserialization"
+  },
+  {
+    "title": "Django Rest Framework",
+    "path": "/cheatsheets/Django_REST_Framework"
+  },
+  {
+    "title": "Django Security",
+    "path": "/cheatsheets/Django_Security"
+  },
+  {
+    "title": "Docker Security",
+    "path": "/cheatsheets/Docker_Security"
+  },
+  {
+    "title": "Dom Based Xss Prevention",
+    "path": "/cheatsheets/DOM_based_XSS_Prevention"
+  },
+  {
+    "title": "Dom Clobbering Prevention",
+    "path": "/cheatsheets/DOM_Clobbering_Prevention"
+  },
+  {
+    "title": "Dotnet Security",
+    "path": "/cheatsheets/DotNet_Security"
+  },
+  {
+    "title": "Drone Security",
+    "path": "/cheatsheets/Drone_Security"
+  },
+  {
+    "title": "Error Handling",
+    "path": "/cheatsheets/Error_Handling"
+  },
+  {
+    "title": "File Upload",
+    "path": "/cheatsheets/File_Upload"
+  },
+  {
+    "title": "Forgot Password",
+    "path": "/cheatsheets/Forgot_Password"
+  },
+  {
+    "title": "Graphql",
+    "path": "/cheatsheets/GraphQL"
+  },
+  {
+    "title": "Html5 Security",
+    "path": "/cheatsheets/HTML5_Security"
+  },
+  {
+    "title": "Http Headers",
+    "path": "/cheatsheets/HTTP_Headers"
+  },
+  {
+    "title": "Http Strict Transport Security",
+    "path": "/cheatsheets/HTTP_Strict_Transport_Security"
+  },
+  {
+    "title": "Infrastructure As Code Security",
+    "path": "/cheatsheets/Infrastructure_as_Code_Security"
+  },
+  {
+    "title": "Injection Prevention",
+    "path": "/cheatsheets/Injection_Prevention"
+  },
+  {
+    "title": "Injection Prevention In Java",
+    "path": "/cheatsheets/Injection_Prevention_in_Java"
+  },
+  {
+    "title": "Input Validation",
+    "path": "/cheatsheets/Input_Validation"
+  },
+  {
+    "title": "Insecure Direct Object Reference Prevention",
+    "path": "/cheatsheets/Insecure_Direct_Object_Reference_Prevention"
+  },
+  {
+    "title": "Jaas",
+    "path": "/cheatsheets/JAAS"
+  },
+  {
+    "title": "Java Security",
+    "path": "/cheatsheets/Java_Security"
+  },
+  {
+    "title": "Json Web Token For Java",
+    "path": "/cheatsheets/JSON_Web_Token_for_Java"
+  },
+  {
+    "title": "Key Management",
+    "path": "/cheatsheets/Key_Management"
+  },
+  {
+    "title": "Kubernetes Security",
+    "path": "/cheatsheets/Kubernetes_Security"
+  },
+  {
+    "title": "Laravel",
+    "path": "/cheatsheets/Laravel"
+  },
+  {
+    "title": "Ldap Injection Prevention",
+    "path": "/cheatsheets/LDAP_Injection_Prevention"
+  },
+  {
+    "title": "Legacy Application Management",
+    "path": "/cheatsheets/Legacy_Application_Management"
+  },
+  {
+    "title": "Logging",
+    "path": "/cheatsheets/Logging"
+  },
+  {
+    "title": "Logging Vocabulary",
+    "path": "/cheatsheets/Logging_Vocabulary"
+  },
+  {
+    "title": "Mass Assignment",
+    "path": "/cheatsheets/Mass_Assignment"
+  },
+  {
+    "title": "Microservices Based Security Arch Doc",
+    "path": "/cheatsheets/Microservices_based_Security_Arch_Doc"
+  },
+  {
+    "title": "Microservices Security",
+    "path": "/cheatsheets/Microservices_Security"
+  },
+  {
+    "title": "Mobile Application Security",
+    "path": "/cheatsheets/Mobile_Application_Security"
+  },
+  {
+    "title": "Multifactor Authentication",
+    "path": "/cheatsheets/Multifactor_Authentication"
+  },
+  {
+    "title": "Network Segmentation",
+    "path": "/cheatsheets/Network_Segmentation"
+  },
+  {
+    "title": "Nodejs Docker",
+    "path": "/cheatsheets/NodeJS_Docker"
+  },
+  {
+    "title": "Nodejs Security",
+    "path": "/cheatsheets/Nodejs_Security"
+  },
+  {
+    "title": "Npm Security",
+    "path": "/cheatsheets/NPM_Security"
+  },
+  {
+    "title": "Oauth2",
+    "path": "/cheatsheets/OAuth2"
+  },
+  {
+    "title": "Os Command Injection Defense",
+    "path": "/cheatsheets/OS_Command_Injection_Defense"
+  },
+  {
+    "title": "Password Storage",
+    "path": "/cheatsheets/Password_Storage"
+  },
+  {
+    "title": "Php Configuration",
+    "path": "/cheatsheets/PHP_Configuration"
+  },
+  {
+    "title": "Pinning",
+    "path": "/cheatsheets/Pinning"
+  },
+  {
+    "title": "Prototype Pollution Prevention",
+    "path": "/cheatsheets/Prototype_Pollution_Prevention"
+  },
+  {
+    "title": "Query Parameterization",
+    "path": "/cheatsheets/Query_Parameterization"
+  },
+  {
+    "title": "Rest Assessment",
+    "path": "/cheatsheets/REST_Assessment"
+  },
+  {
+    "title": "Rest Security",
+    "path": "/cheatsheets/REST_Security"
+  },
+  {
+    "title": "Ruby On Rails",
+    "path": "/cheatsheets/Ruby_on_Rails"
+  },
+  {
+    "title": "Saml Security",
+    "path": "/cheatsheets/SAML_Security"
+  },
+  {
+    "title": "Secrets Management",
+    "path": "/cheatsheets/Secrets_Management"
+  },
+  {
+    "title": "Secure Cloud Architecture",
+    "path": "/cheatsheets/Secure_Cloud_Architecture"
+  },
+  {
+    "title": "Secure Product Design",
+    "path": "/cheatsheets/Secure_Product_Design"
+  },
+  {
+    "title": "Securing Cascading Style Sheets",
+    "path": "/cheatsheets/Securing_Cascading_Style_Sheets"
+  },
+  {
+    "title": "Server Side Request Forgery Prevention",
+    "path": "/cheatsheets/Server_Side_Request_Forgery_Prevention"
+  },
+  {
+    "title": "Session Management",
+    "path": "/cheatsheets/Session_Management"
+  },
+  {
+    "title": "Software Supply Chain Security",
+    "path": "/cheatsheets/Software_Supply_Chain_Security"
+  },
+  {
+    "title": "Sql Injection Prevention",
+    "path": "/cheatsheets/SQL_Injection_Prevention"
+  },
+  {
+    "title": "Symfony",
+    "path": "/cheatsheets/Symfony"
+  },
+  {
+    "title": "Third Party Javascript Management",
+    "path": "/cheatsheets/Third_Party_Javascript_Management"
+  },
+  {
+    "title": "Threat Modeling",
+    "path": "/cheatsheets/Threat_Modeling"
+  },
+  {
+    "title": "Tls Cipher String",
+    "path": "/cheatsheets/TLS_Cipher_String"
+  },
+  {
+    "title": "Transaction Authorization",
+    "path": "/cheatsheets/Transaction_Authorization"
+  },
+  {
+    "title": "Transport Layer Protection",
+    "path": "/cheatsheets/Transport_Layer_Protection"
+  },
+  {
+    "title": "Transport Layer Security",
+    "path": "/cheatsheets/Transport_Layer_Security"
+  },
+  {
+    "title": "Unvalidated Redirects And Forwards",
+    "path": "/cheatsheets/Unvalidated_Redirects_and_Forwards"
+  },
+  {
+    "title": "User Privacy Protection",
+    "path": "/cheatsheets/User_Privacy_Protection"
+  },
+  {
+    "title": "Virtual Patching",
+    "path": "/cheatsheets/Virtual_Patching"
+  },
+  {
+    "title": "Vulnerability Disclosure",
+    "path": "/cheatsheets/Vulnerability_Disclosure"
+  },
+  {
+    "title": "Vulnerable Dependency Management",
+    "path": "/cheatsheets/Vulnerable_Dependency_Management"
+  },
+  {
+    "title": "Web Service Security",
+    "path": "/cheatsheets/Web_Service_Security"
+  },
+  {
+    "title": "Xml External Entity Prevention",
+    "path": "/cheatsheets/XML_External_Entity_Prevention"
+  },
+  {
+    "title": "Xml Security",
+    "path": "/cheatsheets/XML_Security"
+  },
+  {
+    "title": "Xs Leaks",
+    "path": "/cheatsheets/XS_Leaks"
+  },
+  {
+    "title": "Xss Filter Evasion",
+    "path": "/cheatsheets/XSS_Filter_Evasion"
+  }
+]
