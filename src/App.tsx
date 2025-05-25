@@ -2,6 +2,7 @@ import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import NavBar from './components/NavBar'
 import Home from './components/Home'
+import cheatSheetItems from './components/cheatSheetItems.json'
 
 function App() {
   return (
@@ -9,11 +10,16 @@ function App() {
       <div className="app-container">
         <NavBar />
         <main className="main-content">
-          <Routes>
+            <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/cheatsheets/authentication" element={<div>Authentication Cheat Sheet</div>} />
-            <Route path="/cheatsheets/authorization" element={<div>Authorization Cheat Sheet</div>} />
-          </Routes>
+            {cheatSheetItems.map((item, index) => (
+              <Route 
+              key={`${index}-${item.title}`}
+              path={item.path}
+              element={<div>{item.title}</div>} 
+              />
+            ))}
+            </Routes>
         </main>
       </div>
     </Router>
